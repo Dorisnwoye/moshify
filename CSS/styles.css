@@ -20,9 +20,15 @@
   background: var(--color-primary);
   color: #fff;
 }
+
 html {
   font-size: 62.5%;
 }
+
+img {
+  width: 100%;
+}
+
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
@@ -47,8 +53,9 @@ h2 {
 }
 
 h3 {
-  font-size: 3rem;
-  font-weight: 500;
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 1.3;
 }
 
 p {
@@ -560,6 +567,7 @@ a {
   .callout .grid--1x2 {
     grid-template-columns: 1fr auto;
   }
+
   .callout__content {
     text-align: left;
   }
@@ -624,7 +632,7 @@ a {
 
 .block--dark h1,
 .block--dark h2,
-.block--dark h1 {
+.block--dark h3 {
   color: #fff;
 }
 
@@ -773,8 +781,9 @@ a {
 .feature:first-of-type {
   margin-top: 6rem;
 }
+
 .feature__heading {
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 .feature__image {
@@ -807,9 +816,10 @@ a {
   }
 }
 
-/* Footer*/
+/* Footer */
 .footer {
   background: #232323;
+  padding-top: 10rem;
 }
 
 .footer a {
@@ -833,6 +843,8 @@ a {
 .footer__heading {
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 1.5;
 }
 
 .footer__brand {
@@ -841,8 +853,6 @@ a {
 }
 
 .footer__brand img {
-  /* TODO: Consider refactoring this and applying it to all images*/
-  width: 100%;
   max-width: 230px;
 }
 
@@ -856,7 +866,6 @@ a {
   .footer {
     font-size: 1.5rem;
   }
-
   .footer__sections {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
@@ -886,4 +895,9 @@ a {
   .footer__heading {
     font-size: 1.6rem;
   }
+}
+
+/* Sign-up Callout */
+.callout-signup {
+  transform: translateY(5rem);
 }
